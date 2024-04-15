@@ -20,13 +20,86 @@ To write a program to perform linear search and binary search using python progr
 i)	#Use a linear search method to match the item in a list.
 ```
 
+def binarySearchIter(array, k, low, high):
+
+    while low<=high:
+
+        mid=low+(high-low)//2
+
+        if array[mid]==k:
+
+            return mid
+
+        elif array[mid]<k:
+
+            low=mid+1
+
+        else:
+
+            high=mid-1
+
+    return -1
+
+array = eval(input())
+
+array.sort()
+
+k = eval(input()) 
+
+print(array)
+
+res=binarySearchIter(array,k,0,len(array)-1)
+
+if res==-1:
+
+    print("Element not found")
+
+else:
+
+    print("Element found at index: ",res)
 
 
 ```
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
 
+def binarySearchIter(array, k, low, high):
 
+    while low<=high:
+
+        mid=low+(high-low)//2
+
+        if array[mid]==k:
+
+            return mid
+
+        elif array[mid]<k:
+
+            low=mid+1
+
+        else:
+
+            high=mid-1
+
+    return -1
+
+array = eval(input())
+
+array.sort()
+
+k = eval(input()) 
+
+print(array)
+
+res=binarySearchIter(array,k,0,len(array)-1)
+
+if res==-1:
+
+    print("Element not found")
+
+else:
+
+    print("Element found at index: ",res)
 
 
 
@@ -34,16 +107,56 @@ ii)	# Find the element in a list using Binary Search(Iterative Method).
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
 
+def binarySearchIter(array, k, low, high):
+
+    while low<=high:
+
+        mid=low+(high-low)//2
+
+        if array[mid]==k:
+
+            return mid
+
+        elif array[mid]<k:
+
+            low=mid+1
+
+        else:
+
+            high=mid-1
+
+    return -1
 
 
+array = eval(input())
+
+array.sort()
+
+k = eval(input()) 
+
+print(array)
+
+res=binarySearchIter(array,k,0,len(array)-1)
+
+if res==-1:
+
+    print("Element not found")
+
+else:
+
+    print("Element found at index: ",res)
 
 
 ```
 ## Sample Input and Output
 
+![Screenshot 2024-04-15 210012](https://github.com/RITHISHlearn/Search-Algorithms/assets/145446645/ef5ad6aa-55a6-43b4-91f9-8b262c790ab1)
 
 
+![Screenshot 2024-04-15 210024](https://github.com/RITHISHlearn/Search-Algorithms/assets/145446645/6988b7be-1473-4f28-a01f-29f703d6c9ea)
 
+
+ ![Screenshot 2024-04-15 210034](https://github.com/RITHISHlearn/Search-Algorithms/assets/145446645/fd185313-2f8c-4987-9a55-5d6297551f5c)
 
 
 ## Result
